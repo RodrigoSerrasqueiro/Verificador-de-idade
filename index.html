@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de idade</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h1>Verificador de idade</h1>
+  </header>
+
+  <section>
+    <div id="inputs">
+      <p>
+        Qual o ano do seu nascimento?
+        <input type="number" name="txtAno" id="txt-ano" min="0">
+      </p>
+      <p>
+        Informe o seu sexo:
+        <label for="mas">Masculino</label>
+        <input type="radio" name="radio-sexo" id="sex-mas" checked>
+        <label for="fem">Feminino</label>
+        <input type="radio" name="radio-sexo" id="sex-fem">
+      </p>
+      <p>
+        <input type="button" id="botao-verificar" value="verificar" onclick="verificar()">
+      </p>
+    </div>
+    <div id="resultado">
+      <p>
+        Para ver o resultado preencha os dados acima e clique em <strong>verificar.</strong>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; Rodrigo Serrasqueiro</p>
+  </footer>
+
+  <script src="./scripts.js"></script>
+</body>
+</html>
